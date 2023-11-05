@@ -1,0 +1,500 @@
+/* FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+3:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+:root {
+    /* Colores*/
+    --color-1: (rgb(218, 215, 205));
+    --color-2: (rgb(163, 177, 138));
+    --color-3: (rgb(88, 129, 87));
+    --color-4: (rgb(58, 90, 64));
+    --color-5: (rgb(52, 78, 65));
+
+    /* Box Shadow*/
+
+    --box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    --webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    --moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ----------------------------------------------------                          HEADER                          --------------------------------------*/
+
+header {
+    height: 10vh;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    overflow: hidden;
+}
+
+#logo_header {
+    width: 80px;
+    height: 75px;
+}
+
+header>h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+header>nav {
+    flex-grow: 1;
+    /* Para que tenga todo el ancho disponible    */
+    justify-content: center;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+a {
+    padding: 1rem 1rem;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+
+/* Por alguna razon no funciona la variable de color en este hover */
+a:hover {
+    background-color: var(--color-1);
+}
+
+#menu_hamburguer {
+    display: none;
+    width: 128px;
+    height: 90px;
+    cursor: pointer;
+    margin-right: -2.5rem;
+}
+
+
+/* ----------------------------------------------                           HEADER - RESPONSIVE                       ---------------------------------*/
+
+
+
+@media (max-width: 1181px) {
+    header {
+        gap: 1rem;
+    }
+
+    header>h1 {
+        font-size: 1.25rem;
+    }
+
+    .nav-list {
+        gap: 0.25rem
+    }
+}
+
+
+@media (max-width: 1080px) {
+    header .nav-list {
+        display: none;
+    }
+
+    #menu_hamburguer {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        min-height: 4rem;
+    }
+
+    #logo_header {
+        width: 64px;
+        height: 60px;
+    }
+
+    #menu_hamburguer {
+        width: 100px;
+        height: 71px;
+        margin-right: -2rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header>h1 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+}
+
+
+
+
+/* ------------------------------------------------                                 HERO                           --------------------------------------*/
+
+
+#hero {
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(assets/amazonas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero_title {
+    margin: 0;
+    padding: 0 2rem;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+#hero_p {
+    margin: 0;
+    padding: 0 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#hero_p>strong {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 100%;
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------------                                 HERO - RESPONSIVE                           ----------------------------------*/
+
+
+@media (max-width: 1080px) {
+    #hero_title {
+        font-size: 5rem;
+    }
+
+    #hero_p {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    #hero_title {
+        font-size: 4rem;
+    }
+
+    #hero_p {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* ------------------------------------------------                                 ABOUT                           --------------------------------------*/
+#about {
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+#about_container {
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
+}
+
+#about h4 {
+    font-size: 1.75rem;
+    padding: 0rem 2rem;
+    margin: 0;
+}
+
+#about h5 {
+    font-size: 1.3rem;
+    padding: 0rem 2rem;
+    margin: 0;
+}
+
+/* ------------------------------------------------                          ABOUT - RESPONSIVE                   --------------------------------------*/
+
+
+@media (max-width: 500px) {
+    #about h4 {
+        font-size: 1.25rem;
+
+    }
+
+    #about h5 {
+        font-size: 1rem;
+
+    }
+}
+
+/* ------------------------------------------------                                 AREAS                           --------------------------------------*/
+
+#areas {
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 1.5rem;
+    grid-template-areas: "archivo archivo estudiantes publicaciones"
+        "archivo archivo visitanos publicaciones";
+}
+
+#areas>article {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#areas img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#areas h2 {
+    position: relative;
+    top: -65px;
+    color: white;
+    padding: 0.5rem;
+}
+
+
+#archivo_area {
+    grid-area: archivo;
+}
+
+#estudiantes_area {
+    grid-area: estudiantes;
+}
+
+#publicaciones_area {
+    grid-area: publicaciones;
+}
+
+#visitanos_area {
+    grid-area: visitanos;
+}
+
+
+
+/* ------------------------------------------------                          AREAS - RESPONSIVE                   --------------------------------------*/
+
+@media (max-width: 770px) {
+    #areas {
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+            "archivo archivo publicaciones"
+            "archivo archivo publicaciones"
+            "estudiantes visitanos publicaciones";
+    }
+}
+
+@media (max-width: 630px) {
+    #areas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas:
+            "archivo archivo"
+            "archivo archivo"
+            "estudiantes publicaciones"
+            "visitanos publicaciones";
+    }
+}
+
+@media (max-width: 500px) {
+    #areas {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 350px);
+        grid-template-areas:
+            "archivo"
+            "publicaciones"
+            "estudiantes"
+            "visitanos";
+    }
+}
+
+
+
+
+/* ------------------------------------------------                                ARTICLES                          --------------------------------------*/
+
+#articles {
+    min-height: 600px;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#articles article {
+    width: 33.33%;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#articles img {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#articles>article>div {
+    height: 50%;
+    padding: 0rem 1rem;
+}
+
+#articles>article>div>h2,
+#articles>article>div>p {
+    text-align: justify;
+    margin: 0.5rem 0 0 0;
+}
+
+
+
+
+/* ------------------------------------------------                          ARTICLES - RESPONSIVE                   --------------------------------------*/
+
+
+
+@media (max-width: 770px) {
+    #articles {
+        flex-direction: column;
+    }
+
+    #articles article {
+        width: 100%;
+    }
+
+    #articles img {
+        height: 65%;
+    }
+
+    #articles>article>div {
+        height: 35%;
+    }
+}
+
+@media (max-width: 570px) {
+    #articles img {
+        height: 50%;
+    }
+
+    #articles>article>div {
+        height: 50%;
+    }
+
+    #articles>article>div>h2 {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* ------------------------------------------------                                FOOTER                          --------------------------------------*/
+
+footer {
+    width: 100vw;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
+}
+
+footer li {
+    cursor: pointer;
+}
+
+#footer_nav {
+    padding: 0;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    gap: 2rem;
+}
+
+#footer_social {
+    padding: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+
+/* ------------------------------------------------                        FOOTER - RESPONSIVE                   --------------------------------------*/
+
+
+
+@media (max-width:900px) {
+    #footer_nav {
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #footer_social {
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
