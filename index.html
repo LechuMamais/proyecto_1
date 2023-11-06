@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Práctica 1</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <script type="text/javascript" src="main.js"></script>
+
+    <title>World Wide Green Foundation</title>
 </head>
 
 <body>
@@ -15,6 +18,7 @@
         <img id="logo_header" src="assets/logo.png"
             alt="logo" />
         <h1>World Wide Green<br>Foundation</h1>
+        
         <nav>
             <ul class="nav-list">
                 <li><a href="#">Educación</a></li>
@@ -22,10 +26,22 @@
                 <li><a href="#">Investigación</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Contribuyentes</a></li>
-                <li><a href="#">Quiénes somos?</a></li>
+                <li><a href="#about">Quiénes somos?</a></li>
             </ul>
         </nav>
-        <img id="menu_hamburguer" src="assets/hamburger_menu_navbar.png" alt="menu">
+        <img id="menu_hamburguer_icon" src="assets/hamburger_menu_navbar.png" alt="menu">
+        
+        <nav id="menu_hamburguer" class="hidden">
+            
+            <ul class="nav-list-burguer">
+                <li><a href="#">Educación</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Investigación</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contribuyentes</a></li>
+                <li><a href="#about">Quiénes somos?</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>
@@ -98,20 +114,19 @@
     <footer>
 
         <ul id="footer_nav">
-            <li>Contacto</li>
-            <li>Prensa</li>
-            <li>Noticias</li>
-            <li>Premios y Reconocimientos</li>
-            <li>Política de privacidad</li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#publicaciones_area">Noticias</a></li>
+            <li><a href="#">Premios y Reconocimientos</a></li>
+            <li><a href="#">Política de privacidad</a></li>
         </ul>
 
         <ul id="footer_social">
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
         </ul>
     </footer>
-
 
 </body>
 
