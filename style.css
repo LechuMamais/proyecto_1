@@ -70,6 +70,9 @@ header {
     gap: var(--gap-l);
     padding: var(--padding-horizontal-m);
     overflow: hidden;
+    box-shadow: var(--box-shadow) inset;
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
 }
 
 #logo_header {
@@ -101,6 +104,7 @@ header>nav {
 
 a {
     padding: 1rem;
+    padding-bottom: 0;
     color: var(--color-black);
     font-weight: 400;
     text-decoration: none;
@@ -108,11 +112,6 @@ a {
     scroll-behavior: smooth;
 }
 
-
-/* Por alguna razon no funciona la variable de color en este hover */
-a:hover {
-    background-color: var(--color-1);
-}
 
 
 
@@ -135,9 +134,12 @@ a:hover {
     position: absolute;
     padding: 2rem;
     background-color: var(--color-white);
-    width: 100vw;
+    margin-top: 5px ;
     right: 0px;
     top: 80px;
+    box-shadow: var(--box-shadow) inset;
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    -moz-box-shadow: var(--moz-box-shadow);
     border-top: 1px solid black;
     transition: opacity 400ms ease;;
 }
@@ -148,10 +150,20 @@ a:hover {
     flex-direction: column;
     align-items:flex-end;
     gap: var(--gap-s);
-
+    width: 100%;
+}
+.nav-list-burguer{
+    width: 100%;
 }
 .nav-list-burguer>li>a{
     font-size: var(--font-xxxs);
+    transition: all 400ms;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+a:hover{
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .075);
 }
 
 
