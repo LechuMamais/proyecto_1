@@ -10,12 +10,15 @@
 }
 
 :root {
-    /* Colores*/
+    /* Colores
     --color-1: (rgb(218, 215, 205));
     --color-2: (rgb(163, 177, 138));
     --color-3: (rgb(88, 129, 87));
     --color-4: (rgb(58, 90, 64));
     --color-5: (rgb(52, 78, 65));
+    */
+    --color-white: white;
+    --color-black: black;
 
 
     /* Box*/
@@ -98,7 +101,7 @@ header>nav {
 
 a {
     padding: 1rem;
-    color: black;
+    color: var(--color-black);
     font-weight: 400;
     text-decoration: none;
     transition: all 500ms;
@@ -131,7 +134,7 @@ a:hover {
     opacity: 1;
     position: absolute;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--color-white);
     width: 100vw;
     right: 0px;
     top: 80px;
@@ -221,7 +224,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    color: white;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,7 +351,7 @@ a:hover {
 #areas h2 {
     position: relative;
     top: -65px;
-    color: white;
+    color: var(--color-white);
     padding: 0.5rem;
 }
 
