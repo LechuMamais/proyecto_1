@@ -71,8 +71,8 @@ header {
     padding: var(--padding-horizontal-m);
     overflow: hidden;
     box-shadow: var(--box-shadow) inset;
-    -webkit-box-shadow: var(--webkit-box-shadow);
-    -moz-box-shadow: var(--moz-box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow) inset;
+    -moz-box-shadow: var(--moz-box-shadow) inset;
 }
 
 #logo_header {
@@ -138,8 +138,8 @@ a {
     right: 0px;
     top: 80px;
     box-shadow: var(--box-shadow) inset;
-    -webkit-box-shadow: var(--webkit-box-shadow);
-    -moz-box-shadow: var(--moz-box-shadow);
+    -webkit-box-shadow: var(--webkit-box-shadow) inset;
+    -moz-box-shadow: var(--moz-box-shadow) inset;
     border-top: 1px solid black;
     transition: opacity 400ms ease;;
 }
